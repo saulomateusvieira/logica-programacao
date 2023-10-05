@@ -5,11 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica de Programação</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lógica de Programação</h1>
-    <p>Pégina da lógica de Programação</p>
-    <script src="./script.js"></script>
+    <section>
+        <div></div>
+        <h1>Lógica de Programação</h1>
+        <p>Pégina da lógica de Programação</p>
+
+        <form action="">
+            <div class="controle-form">
+                <label for="nota1">Nota 1:</label>
+                <input type="text" id="nota1" required>
+            </div>
+
+        <form action="">
+            <div class="controle-form">
+                <label for="nota2">Nota 2:</label>
+                <input type="text" id="nota2" required>
+            </div>
+
+        <form action="">
+            <div class="controle-form">
+                <label for="nota3">Nota 3:</label>
+                <input type="text" id="nota3" required>
+            </div>
+
+            <button type="button" onclick="mediaAluno()" >Calcular</button> 
+        </form>
+        <div id="resultado"></div>
+        
+        <script src="./script.js"></script>
+    </section>
 </body>
 </html>
