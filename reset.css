@@ -48,38 +48,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-.controle.form {
-    border: 10px;
-    border-radius: 10px;
-    }
-
-input {
-    border-style: solid;
-    
-    background-color: rgb(44, 33, 12);
-    border-radius: 5px;
-    color: antiquewhite;
-    content: normal;
-}
-
-input:hover {
-    border-style: solid;
-    
-    background-color: rgb(231, 162, 32);
-    border-color: rgb(73, 50, 21);
-    border-radius: 5px;
-    color: antiquewhite;
-    content: normal;
-    
-    }
-
-section {
-    background-color: rgb(255, 172, 49);
-    width: 350px;
-    height: 200px;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
