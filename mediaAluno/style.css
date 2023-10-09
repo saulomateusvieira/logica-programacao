@@ -14,8 +14,8 @@ body {
 
 input {
     border-style: solid;
-    background-color: #c6c0e9;
-    border-color: #100a1e;
+    background-color: #eeeef0;
+    border-color: #5db1ec;
     border-radius: 5px;
     color: #4c4c7b;
     content: normal;
@@ -28,9 +28,9 @@ input {
 input:hover {
     border-style: solid;
     background-color: #59b4f0;
-    border-color: rgb(73, 50, 21);
+    border-color: #eeeef0;
     border-radius: 5px;
-    color: #100a1e;
+    color: #eeeef0;
     content: normal;
     
     }
@@ -38,7 +38,7 @@ input:hover {
 .main {
    width: 100vw;
    height: 100vh;
-   background: #100a1e;
+   background: #eeeef0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -55,11 +55,11 @@ button {
     align-items: center;
     padding: 10px;
     margin-top: 10px;
-    
+    color: #eeeef0;
 }
 
 .esquerda {
-    background-color:#7c7ca3;
+    background-color:#3a4b53;
     width: 40vw;
     height: 80vh;
     border-bottom-left-radius: 5px;
@@ -73,8 +73,8 @@ button {
 }
 
 .form-box {
-    background-color:#7c7ca3;
-    color: #c6c0e9;
+    background-color:#3a4b53;
+    color: #eeeef0;
     width: 40vw;
     height: 80vh;
     border-bottom-right-radius: 5px;
@@ -96,22 +96,25 @@ button {
 }
 
 img {
-    width: 10vw;
+    width: 20vw;
 }
 
-
+a {
+    font-size: xx-small;
+}
 
 .esquerda > h1 {
-    color: #59b4f0;
+    color: #5db1ec;
     font-size: large;
+    font-weight: bold ;
     justify-content: center;
  }
  .esquerda > p {
-    color: #100a1e;
+    color: #eeeef0;
     font-size: medium;
  }
  label{
-    color: #100a1e;
+    color: #eeeef0;
     
  }
 
