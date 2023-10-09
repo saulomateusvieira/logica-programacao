@@ -49,7 +49,7 @@ button {
     border-radius: 15px;
     border-color: rgb(231, 162, 32);
     background-color: #59b4f0;
-    width: 25vw;
+    width: 19vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,6 +70,7 @@ button {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    
 }
 
 .form-box {
@@ -96,7 +97,7 @@ button {
 }
 
 img {
-    width: 20vw;
+    width: 15vw;
 }
 
 a {
@@ -105,9 +106,13 @@ a {
 
 .esquerda > h1 {
     color: #5db1ec;
+    
     font-size: large;
-    font-weight: bold ;
+    font-weight: bold;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    
  }
  .esquerda > p {
     color: #eeeef0;
@@ -118,3 +123,10 @@ a {
     
  }
 
+ .text-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+ }
