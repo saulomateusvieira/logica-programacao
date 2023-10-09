@@ -1,14 +1,17 @@
-
-body {
-   
-   
+* {
+    margin: 0;
+    padding: 0;
 }
+
 
 .controle.form {
     border: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 19vw;
     padding: 30px;
     }
 
@@ -62,24 +65,23 @@ button {
     background-color:#3a4b53;
     width: 40vw;
     height: 80vh;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    
-}
+    }
 
 .form-box {
     background-color:#3a4b53;
     color: #eeeef0;
     width: 40vw;
     height: 80vh;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
@@ -90,14 +92,14 @@ button {
     font-size: small;
     margin-top: 10px;
     width: 25vw;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
 img {
-    width: 15vw;
+    width: 20vw;
 }
 
 a {
@@ -106,17 +108,19 @@ a {
 
 .esquerda > h1 {
     color: #5db1ec;
-    
+    width: 20vw;
+    align-self: center;
     font-size: large;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 0;
  }
  .esquerda > p {
     color: #eeeef0;
     font-size: medium;
+    margin: 0;
  }
  label{
     color: #eeeef0;
@@ -124,9 +128,13 @@ a {
  }
 
  .text-field {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 10px 15px;
+    background: #737396;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
  }
