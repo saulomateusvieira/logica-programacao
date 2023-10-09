@@ -10,33 +10,42 @@
 </head>
 <body>
     <section>
-        <div></div>
-        <h1>Lógica de Programação</h1>
-        <p>Média de aluno</p>
+        <div class="main">
+            <div class="esquerda">
+                <h1>Lógica de Programação</h1>
+                <p>Média do aluno</p>
+                <img src="nota.png">
+            </div>
+            <div class="form-box">
+                    
+                        <div class="text-field">
+                            <form action="">
+                                <div class="controle-form">
+                                    <label for="nota1">Nota 1:</label>
+                                    <input type="text" id="nota1" required placeholder="Escreva a nota 1">
+                                </div>
+                            </form>    
+                            <form action="">
+                                <div class="controle-form">
+                                    <label for="nota2">Nota 2:</label>
+                                    <input type="text" id="nota2" required placeholder="Escreva a nota 2">
+                                </div>
 
-        <form action="">
-            <div class="controle-form">
-                <label for="nota1">Nota 1:</label>
-                <input type="text" id="nota1" required>
+                            <form action="">
+                                <div class="controle-form">
+                                    <label for="nota3">Nota 3:</label>
+                                    <input type="text" id="nota3" required placeholder="Escreva a nota 3">
+                                </div>
+                            <button type="button" onclick="mediaAluno()">Calcular</button> 
+                            </form>
+                            <div id="resultado">
+                            </div>
+                            <script src="./mediaAluno.js"></script>
+                        </div>
             </div>
 
-        <form action="">
-            <div class="controle-form">
-                <label for="nota2">Nota 2:</label>
-                <input type="text" id="nota2" required>
-            </div>
-
-        <form action="">
-            <div class="controle-form">
-                <label for="nota3">Nota 3:</label>
-                <input type="text" id="nota3" required>
-            </div>
-
-            <button type="button" onclick="mediaAluno()" >Calcular</button> 
-        </form>
-        <div id="resultado"></div>
-        
-        <script src="./mediaAluno.js"></script>
+        </div>
+       
     </section>
 </body>
 </html>
