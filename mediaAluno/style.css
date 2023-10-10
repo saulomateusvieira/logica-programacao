@@ -1,9 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+.controle-form > label{
+    color: #eeeef0;
+    font-weight: 400 ;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+ }
 .controle.form {
     border: 10px;
     border-radius: 10px;
@@ -13,6 +16,7 @@
     flex-direction: column;
     width: 19vw;
     padding: 30px;
+    font-family: 'Roboto', sans-serif;
     }
 
 input {
@@ -26,6 +30,18 @@ input {
     height: 10px;
     padding: 5px;
     gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    outline-color: #5db1ec;
+    font-family: 'Roboto', sans-serif;
+}
+
+input::placeholder {
+    color: #898997;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 input:hover {
@@ -35,7 +51,7 @@ input:hover {
     border-radius: 5px;
     color: #eeeef0;
     content: normal;
-    
+    outline-color: #eeeef0;
     }
 
 .main {
@@ -45,90 +61,122 @@ input:hover {
    display: flex;
    align-items: center;
    justify-content: center;
- 
 }
+
 button {
     border: 10px;
-    border-radius: 15px;
-    border-color: rgb(231, 162, 32);
+    border-radius: 20px;
     background-color: #59b4f0;
-    width: 19vw;
+    width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
     color: #eeeef0;
+    text-transform: uppercase;
+    font-size: small;
+    box-shadow: 0 10px 40px -12px #02a9f7;
+    font-family: 'Roboto', sans-serif;
 }
+
+button:hover {
+    border: 10px;
+    border-radius: 25px;
+    background-color: #59b4f0;
+    width: 17vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #eeeef0;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+button:active {
+    border: 10px;
+    border-radius: 25px;
+    border-color: #eeeef0;
+    background-color: #59b4f0;
+    width: 20vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #eeeef0;
+    text-transform: uppercase;
+    font-size: large;
+    }
 
 .esquerda {
     background-color:#3a4b53;
-    width: 40vw;
-    height: 80vh;
+    width: 30vw;
+    height: 70vh;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    padding-left: 6.75vw;
+    
     }
+
+    .esquerda > h1 {
+        color: #5db1ec;
+        align-self: center;
+        font-size: 2.25vw;
+        font-weight: 400 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: inherit;
+        text-transform: uppercase;
+    }
+     .esquerda > p {
+        color: #eeeef0;
+        font-size: 2vw;
+        font-weight: 300;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+     }
 
 .form-box {
     background-color:#3a4b53;
     color: #eeeef0;
-    width: 40vw;
-    height: 80vh;
+    width: 30vw;
+    height: 70vh;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+    padding-left: 5vw;
+    padding-right: 5vw;
+    }
 
 #resultado {
     font-size: small;
     margin-top: 10px;
-    width: 25vw;
+    font-size: 10pt;
+    width: 20vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
-    width: 20vw;
+    width: 25vw;
 }
-
-a {
-    font-size: xx-small;
-}
-
-.esquerda > h1 {
-    color: #5db1ec;
-    width: 20vw;
-    align-self: center;
-    font-size: large;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
- }
- .esquerda > p {
-    color: #eeeef0;
-    font-size: medium;
-    margin: 0;
- }
- label{
-    color: #eeeef0;
-    
- }
 
  .text-field {
-    width: 60%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,4 +185,103 @@ a {
     background: #737396;
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
- }
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    @media only screen and (max-width: 950px){
+        .esquerda {
+            width: 30vw;
+            height: 80vh;
+        }
+        
+        .form-box {
+            width: 35vw;
+            height: 80vh;
+        }
+        .esquerda > h1 {
+            font-size: 2vw;
+            font-weight: bold ;
+            width: 40vw;
+        }
+        button {
+            font-size: small;
+            width: 25vw;
+            
+        }
+        button:hover {
+            font-size: medium;
+            width: 27vw;
+        }
+        button:active {
+            font-size: large;
+            width: 30vw;
+        }
+        input {
+            width: 35vw;
+        }
+    }
+
+    @media only screen and (max-width: 600px){
+        .main{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            
+        }
+            .esquerda {
+                padding-left: 0;
+                margin-bottom: 0;
+                padding-bottom: 0px;
+                padding-top: 10vw;
+                height: 20vh;
+                width: 95vw;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 10px;
+            }
+            .form-box {
+                padding: 0;
+                margin: 0vw;
+                height: 55vh;
+                width: 95vw;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;
+            }
+            .text-field{
+                padding-top: 0vw;
+                height: 92vw;
+                width: 90%;
+                padding: 0;
+            }
+            .esquerda > h1 {
+                font-size: 3.15vw;
+                font-weight: bold ;
+            }
+            .esquerda > p {
+                color: #eeeef0;
+                font-size: 3.5vw;
+                font-weight: 300;
+            }
+            input {
+                width: 25vw;
+            }
+            button {
+                font-size: small;
+                width: 30vw;
+               
+            }
+            button:hover {
+                font-size: medium;
+                width: 33vw;
+            }
+            button:active {
+                font-size: large;
+                width: 35vw;
+            }
+    }
+
+    @media only screen and (min-width: 540px){
+img{
+    display: none;
+}
+    }
