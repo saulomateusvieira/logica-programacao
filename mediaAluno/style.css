@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+body * {
+    box-sizing: border-box;
+}
 .controle-form > label{
     color: #eeeef0;
     font-weight: 400 ;
@@ -27,7 +29,7 @@ input {
     color: #4c4c7b;
     content: normal;
     width: 15vw;
-    height: 10px;
+    height: 2vw;
     padding: 5px;
     gap: 10px;
     margin-bottom: 10px;
@@ -224,6 +226,7 @@ img {
         }
         input {
             width: 25vw;
+            height: 2vw;
         }
     }
 
@@ -269,6 +272,7 @@ img {
             }
             input {
                 width: 25vw;
+                height: 2vw;
             }
             button {
                 font-size: small;
